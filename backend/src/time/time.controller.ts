@@ -40,7 +40,7 @@ import { Time } from './entities/time.entity';
 
 // Importa o service responsável pelas regras de negócio
 // O service manipula os dados dos times
-import { TimesService } from './time.service';
+import { TimeService } from './time.service';
 
 
 
@@ -48,7 +48,7 @@ import { TimesService } from './time.service';
 // Define que esta classe é um controller
 // Todas as rotas começarão com "/times"
 @Controller('times')
-export class TimesController {
+export class TimeController {
 
 
 
@@ -63,7 +63,7 @@ export class TimesController {
    * - private  -> acessível apenas dentro da classe
    * - readonly -> não pode ser alterado
    */
-  constructor(private readonly timesService: TimesService) {}
+  constructor(private readonly timesService: TimeService) {}
 
 
 

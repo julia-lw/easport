@@ -45,7 +45,7 @@ import { Time } from './entities/time.entity';
 // Define esta classe como um provider/service
 // permitindo injeção automática pelo NestJS
 @Injectable()
-export class TimesService {
+export class TimeService {
 
 
 
