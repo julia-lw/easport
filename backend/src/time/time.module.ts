@@ -38,14 +38,14 @@ import { Module } from '@nestjs/common';
 
 // Importa o service responsável pelas regras de negócio
 // relacionadas aos times
-import { TimesService } from './time.service';
+import { TimeService } from './time.service';
 
 
 
 
 // Importa o controller responsável pelas rotas HTTP
 // dos times
-import { TimesController } from './time.controller';
+import { TimeController } from './time.controller';
 
 
 
@@ -76,7 +76,7 @@ import { TimesController } from './time.controller';
    * PATCH /times/:id/vitoria
    * DELETE /times/:id
    */
-  controllers: [TimesController],
+  controllers: [TimeController],
 
 
 
@@ -99,7 +99,7 @@ import { TimesController } from './time.controller';
    * - lógica das vitórias
    * - criação e remoção de times
    */
-  providers: [TimesService],
+  providers: [TimeService],
 })
 
 
