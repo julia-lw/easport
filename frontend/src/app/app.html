@@ -1,27 +1,27 @@
 <div
-  class="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] bg-gray-800 via-purple-950 text-purple-100 p-4 md:p-8 font-sans">
+  class="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] bg-amber-100 via-red-700 text-purple-100 p-4 md:p-8 font-sans">
 
   <header class="text-center mb-12 relative">
-    <div class="absolute -top-10 left-1/2 -translate-x-1/2 w-64 h-64 bg-purple-500/20 blur-[100px] rounded-full"></div>
+    <div class="absolute -top-10 left-1/2 -translate-x-1/2 w-64 h-64 bg-orange-900/30 blur-[100px] rounded-full"></div>
     <h1 class="text-5xl md:text-7xl font-black tracking-tighter italic uppercase italic">
-      <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500">Torneio</span>
+      <span class="bg-clip-text text-transparent bg-gradient-to-r from-amber-200 to-amber-300">Torneio</span>
       <span class="text-white">e-games</span>
     </h1>
-    <p class="text-violet-100 font-mono tracking-widest mt-2">Liga Brazuca de VideoGames</p>
+    <p class="text-amber-500 font-mono tracking-widest mt-2">Liga Brazuca de VideoGames</p>
   </header>
 
-  <div class="max-w-4xl mx-auto backdrop-blur-md bg-white/5 p-1 rounded-2xl border border-gray-500 shadow-2xl mb-16">
-    <div class="bg-gray p-6 rounded-xl flex flex-col md:flex-row gap-4 items-center">
+  <div class="max-w-4xl mx-auto backdrop-blur-md bg-amber-300 p-1 rounded-2xl border border-gray-500 shadow-2xl mb-16">
+    <div class="bg-amber-200 p-6 rounded-xl flex flex-col md:flex-row gap-4 items-center">
       <div class="w-full">
-        <label class="text-[10px] uppercase font-bold text-purple-300 ml-1">Nome do Time</label>
+        <label class="text-[10px] uppercase font-bold text-amber-700 ml-1">Nome do Time</label>
         <input [(ngModel)]="novoTime.nome" placeholder="Ex: LOUD, Fluxo..."
-          class="w-full bg-slate-800/50 p-4 rounded-lg border border-slate-700 focus:outline-none focus:ring-2 focus:ring-violet-500 transition-all text-lg">
+          class="w-full bg-slate-800/50 p-4 rounded-lg border border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-500 transition-all text-lg">
       </div>
 
       <div class="w-full md:w-80">
-        <label class="text-[10px] uppercase font-bold text-purple-300 ml-1">Selecione a Modalidade</label>
+        <label class="text-[10px] uppercase font-bold text-amber-700 ml-1">Selecione a Modalidade</label>
         <select [(ngModel)]="novoTime.jogo"
-          class="w-full bg-slate-800/50 p-4 rounded-lg border border-slate-700 focus:outline-none focus:ring-2 focus:ring-violet-500 text-white appearance-none cursor-pointer">
+          class="w-full bg-slate-800/50 p-4 rounded-lg border border-slate-700 focus:outline-none focus:ring-2 focus:ring-amber-500 text-white appearance-none cursor-pointer">
           <option value="">Selecione o Jogo</option>
           <option value="Free Fire">Free Fire</option>
           <option value="Valorant">Valorant</option>
@@ -38,7 +38,7 @@
       </div>
 
       <button (click)="adicionar()"
-        class="w-full md:w-auto mt-4 md:mt-4 bg-gradient-to-br from-purple-500 to-blue-600 hover:from-purple-700 hover:to-blue-700 px-10 py-4 rounded-lg font-black transition-all duration-300 transform hover:scale-105 active:scale-95">
+        class="w-full md:w-auto mt-4 md:mt-4 bg-gradient-to-br from-amber-400 to-amber-600 hover:from-amber-600 hover:to-amber-400 px-10 py-4 rounded-lg font-black transition-all duration-300 transform hover:scale-105 active:scale-95">
         RECRUTAR
       </button>
     </div>
@@ -46,13 +46,13 @@
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
     <div *ngFor="let t of times"
-      class="group relative bg-black-900 border border-white/10 p-6 rounded-3xl overflow-hidden transition-all duration-500 hover:-translate-y-2">
+      class="group relative bg-black-900 border border-white p-6 rounded-3xl overflow-hidden transition-all duration-500 hover:-translate-y-2">
 
       <div
-        class="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-blue-600 opacity-0 group-hover:opacity-100 transition duration-500 blur">
+        class="absolute -inset-0.5 bg-gradient-to-r from-amber-400 to-amber-600 opacity-0 group-hover:opacity-100 transition duration-500 blur">
       </div>
 
-      <div class="relative bg-gray-700 rounded-[22px] p-6 h-full flex flex-col justify-between">
+      <div class="relative bg-gray-200 rounded-[22px] p-6 h-full flex flex-col justify-between">
 
         <div class="flex justify-between items-start">
           <span
@@ -74,7 +74,7 @@
           <div>
             <p class="text-[9px] text-slate-500 uppercase font-bold tracking-widest">Patente Atual</p>
             <p class="text-xl font-black italic" [ngClass]="{
-                'text-amber-400 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)]': t.rank === 'Ouro',
+                'text-yellow-500 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)]': t.rank === 'Ouro',
                 'text-slate-300': t.rank === 'Prata',
                 'text-orange-700': t.rank === 'Bronze'
               }">
