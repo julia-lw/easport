@@ -26,7 +26,7 @@
 
 
 // Importa decorators do NestJS usados para criar rotas HTTP
-import { Controller, Get, Post, Patch, Delete, Body, Param } from '@nestjs/common';
+import { Controller, Get, Post, Patch, Delete, Body, Param, Put } from '@nestjs/common';
 
 
 
@@ -87,6 +87,7 @@ export class TimeController {
     return this.timesService.findAll();
   }
 
+  
 
 
 
