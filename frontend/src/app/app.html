@@ -1,5 +1,5 @@
 <div
-  class="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-purple-950 to-black text-white p-4 md:p-8 font-sans">
+  class="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white via-purple-950 to-red-500 text-white p-4 md:p-8 font-sans">
 
   <header class="text-center mb-12 relative">
     <div class="absolute -top-10 left-1/2 -translate-x-1/2 w-64 h-64 bg-cyan-500/20 blur-[100px] rounded-full"></div>
@@ -73,9 +73,9 @@
           <div>
             <p class="text-[9px] text-slate-500 uppercase font-bold tracking-widest">Patente Atual</p>
             <p class="text-xl font-black italic" [ngClass]="{
-                'text-cyan-400 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)]': t.rank === 'Diamante',
-                'text-slate-300': t.rank === 'Silver',
-                'text-yellow-700': t.rank === 'Caramelo'
+                'text-amber-400 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)]': t.rank === 'Ouro',
+                'text-slate-300': t.rank === 'Prata',
+                'text-orange-700': t.rank === 'Bronze'
               }">
               {{ t.rank }}
             </p>
