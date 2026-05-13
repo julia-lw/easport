@@ -2,6 +2,7 @@ export class Time {
   id: number;
   nome: string;
   jogo: string;
+  país: string;
   vitorias: number;
 
   constructor(dados?: Partial<Time>) {
